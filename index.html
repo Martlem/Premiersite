@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+    
     h1 {
         font-size: 40px ;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color :rgb(103, 0, 129);
         text-align: center;
+    }
+    h2{
+        font-size: 30px ;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color :rgb(103, 0, 129);
+        text-align: justify;
     }
     p {
         color :rgb(43, 43, 43);
@@ -20,7 +27,40 @@
     }
     ul {
         color :rgb(43, 43, 43);
-        font-size: 25px
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+     #sommaire {
+        font-size: 60px ;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color :rgb(103, 0, 129);
+        text-align: justify;
+     }
+     .menu { display: flex;                               
+             background-color: rgb(103, 0, 129);     
+             padding:0;
+             justify-content: center;
+            }
+    .menu li {
+            list-style-type: none ;
+            }
+    .menu a {
+            display:block;                
+            min-width: 120px;             
+            margin: 0.5rem;               
+            padding: 0.4rem 0;            
+            text-align: center;
+            background-color: #8e6ab8;    
+            color: rgb(0, 0, 0);                 
+            text-decoration: none;        
+            border: 1px solid rgb(0, 0, 0);       
+            border-radius: 4px;   
+
+        }
+    .menu a:hover {
+            background-color: #ed2794;
+            color: #ffe843;
+            border-color: #000000;
     }
         </style>
 </head>
@@ -29,15 +69,32 @@
     <div style="text-align: center">
     <img src="https://cdn.lesnumeriques.com/optim/news/15/158291/d7fbc333-cookies-la-cnil-inflige-100-millions-d-euros-d-amende-a-google-35-millions-a-amazon__w1280.jpeg" width="1400">
     </div>
-    <h1><u><strong>Définition</strong></u> :</h1>
+    <ul class="menu">
+        <li>
+            <a href="#Definition">Definition</a>
+        </li>
+        <li>
+            <a href="#Service">A quoi servent les cookies?</a>
+        </li>
+        <li>
+            <a href="#Types">Les differents types de cookies</a>
+        </li>
+        <li>
+            <a href="#Juridique">Questions juridiques</a>
+        </li>
+        <li>
+            <a href="#plusloin">Pour aller plus loin</a>
+        </li>
+    </ul>
+    <h1 id="Definition"><u><strong>Définition</strong></u> :</h1>
     <p> <big>Les cookies fonctionnent dans le cadre du protocole de transfert hypertexte (HTTP), qui est un protocole de communication entre le client (l’internaute) et le serveur (le site web). Les cookies sont insérés sous forme de code dans chaque requête qu’envoie le serveur d’un site. Les cookies sont enregistrés par le <a href="https://babouchelamouette.github.io/mon_premier_site/">navigateur</a> dans un seul fichier.</big>
         </p>
         <br>
-        <h1><u><strong>A quoi servent les cookies?</strong></u></h1>
+        <h1 id="Service"><u><strong>A quoi servent les cookies?</strong></u></h1>
         <p><big>Les cookies ont de multiples usages : ils peuvent servir à <strong>mémoriser</strong> votre identifiant client auprès d'un site marchand, le contenu courant de votre panier d'achat, la langue d'affichage de la page web, un identifiant permettant de tracer votre navigation à des fins statistiques ou publicitaires, etc.</big></p>
     <br>
-        <h1><u><strong>Les differents types de cookies</strong></u></h1>
-        <FONT face="Times New Roman"> 
+        <h1 id="Types"><u><strong>Les differents types de cookies</strong></u></h1>
+    
         <p><big>Les cookies peuvent être classés dans l’une ou l’autre des catégories suivantes en fonction de leur durée et de leur origine :</p>
     <br>
     <ul>
@@ -48,8 +105,22 @@
         <li><strong>Cookies internes</strong> : Ces cookies sont créés par le site auquel vous avez accédé. Ils servent généralement à permettre au site de se souvenir de vos données et de vos préférences.</li>
         <br>
         <li><strong>Cookies tiers</strong> : Les cookies tiers sont créés par un site autre que celui auquel vous avez accédé. Par exemple, le site de TF1 pourrait avoir un bouton « J’aime » de Facebook sur ses pages. Ce bouton « J’aime » activerait un cookie pouvant être lu par Facebook. Le but des cookies tiers est souvent de recueillir certaines informations destinées à se renseigner sur votre comportement et vos données démographiques à des fins de marketing ciblé, etc.</big>
-        </FONT>
-        </body>
-</html>
-o
+    <h1 id="Juridique">Questions juridiques</h1>
+    <div style="text-align: center;">
+    <img src="https://justsearch.fr/wp-content/uploads/2021/02/shutterstock_1744072934.png" width="800">
+    </div> 
+    <p><big>L'article 5(3) de la directive 2002/58/CE modifiée en 2009 pose le principe :</big> </p>
+    <ul>
+        <li><big>D'un consentement préalable de l'utilisateur avant le stockage d'informations sur son terminal ou l'accès à des informations déjà stockées sur celui-ci ;</big></li>
+        <li><big>Sauf si ces actions sont strictement nécessaires à la fourniture d'un service de communication en ligne expressément demandé par l'utilisateur ou ont pour finalité exclusive de permettre ou faciliter une communication par voie électronique.</big></li>
+    </ul>
+    <p><big><strong><a href="https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000037813978">L’article 82 de la loi Informatique et Libertés</a> transpose ces dispositions en droit français.</strong></big></p>
+        <br>
+        <big>La CNIL rappelle que le consentement prévu par ces dispositions renvoie à la définition et aux conditions prévues aux articles 4(11) et 7 du RGPD. Il doit donc être libre, spécifique, éclairé, univoque et l’utilisateur doit être en mesure de le retirer, à tout moment, avec la même simplicité qu’il l’a accordé.
+        <br>
+        Afin de rappeler et d’expliciter le droit applicable au dépôt et à la lecture de traceurs dans le terminal de l’utilisateur, la CNIL a adopté le 17 septembre 2020 des <a href="https://www.cnil.fr/sites/default/files/atoms/files/lignes_directrices_de_la_cnil_sur_les_cookies_et_autres_traceurs.pdf"> lignes directrices</a>, complétées par <a href="https://www.cnil.fr/sites/default/files/atoms/files/recommandation-cookies-et-autres-traceurs.pdf">recommandation</a> visant notamment à proposer des exemples de modalités pratiques de recueil du consentement.</big>
+        <h2 id="plusloin"><u><big>Pour aller plus loin:</big></u></h2>
+        <p><big><a href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/comment-mettre-mon-site-web-en-conformite">Cookies et traceurs : comment mettre mon site web en conformité ?</a></big></p>
+        </html>
+
 
