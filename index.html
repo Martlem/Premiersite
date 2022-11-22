@@ -36,29 +36,29 @@
         color :rgb(103, 0, 129);
         text-align: justify;
      }
-     .menu { display: flex;                               
-             background-color: rgb(103, 0, 129);     
-             padding:0;
-             justify-content: center;
+     .menu { display: flex;                              /*transformation en box*/ 
+             background-color: rgb(103, 0, 129);       /*couleur background */ 
+             padding:0;                                  /* enleve les marges*/
+             justify-content: center;                    /* mets au milieu les textes*/
             }
     .menu li {
-            list-style-type: none ;
+            list-style-type: none ;                      /* suppretion des ronds au debuts*/
             }
     .menu a {
-            display:block;                
-            min-width: 120px;             
-            margin: 0.5rem;               
-            padding: 0.4rem 0;            
-            text-align: center;
-            background-color: #8e6ab8;    
-            color: rgb(0, 0, 0);                 
-            text-decoration: none;        
-            border: 1px solid rgb(0, 0, 0);       
-            border-radius: 4px;   
+            display:block;                                /*transformation en block */
+            min-width: 120px;                             /* largeur minimal des liens*/
+            margin: 0.5rem;                               /* marges externbes*/
+            padding: 0.4rem 0;                            /* marges internes*/
+            text-align: center;                           /*centre le texte */
+            background-color: #8e6ab8;                  /*Arriere plan couleur */
+            color: rgb(0, 0, 0);                        /*couleur texte */
+            text-decoration: none;                        /*enleve le soulignage */
+            border: 1px solid rgb(0, 0, 0);             /* ajout d'une bordure */
+            border-radius: 4px;                           /* arrondie les bordure de 4*/
 
         }
     .menu a:hover {
-            background-color: #ed2794;
+            background-color: #ed2794;                 /* ajout d'une transition lorsqu'on met la souris dessus*/
             color: #ffe843;
             border-color: #000000;
     }
